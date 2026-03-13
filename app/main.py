@@ -12,7 +12,8 @@ from app.workflow import run_delivery_status_workflow
 
 class PrettyJSONResponse(JSONResponse):
     def render(self, content: object) -> bytes:
-        return json.dumps(content, indent=2, ensure_ascii=True).encode("utf-8")
+        formatted = json.dumps(content, indent=2, ensure_ascii=True)
+        return f"{formatted}\n".encode("utf-8")
 
 
 app = FastAPI(
