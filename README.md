@@ -6,7 +6,5 @@ The Assistant used llama3: latest model.
 
 ## Couple of Outputs Running the Delivery Status Assistant
 
-## Agent Running
-
-![Agent Output](ouput/order1.png)
-![Agent Output](ouput/order2.png)
+![Example 1](output/order1.png)
+![Example 2](output/order2.png)
